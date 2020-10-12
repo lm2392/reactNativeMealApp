@@ -15,7 +15,7 @@ const CatagoriesScreen = (props) => {
           catagoryId: itemData.item.id,
           color: itemData.item.color
         }        
-      });
+      } );
     }}
         />
   };
@@ -31,7 +31,7 @@ const CatagoriesScreen = (props) => {
 };
 
 CatagoriesScreen.navigationOptions = {
-  headerTitle: "Meals Bitch Screen",
+  headerTitle: "Meals Screen",
 };
 
 const styles = StyleSheet.create({

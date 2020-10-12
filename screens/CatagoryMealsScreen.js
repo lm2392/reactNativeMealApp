@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, Button, View, Platform, FlatList } from "react-native";
 import { CATEGORIES, MEALS } from "../data/dataObj";
 import Colors from "../constants/Colors";
-import MealItem from "../components/MealItem";
+import MealItem from "../components/MealItem";/
 
 
 const CatagoryMealsScreen = (props) => {
@@ -12,6 +12,7 @@ const CatagoryMealsScreen = (props) => {
   };
 
   const catId = props.navigation.getParam("catagoryId");
+  
   const displayedMeals = MEALS.filter(
     (meal) => meal.catagoryIds.indexOf(catId) >= 0
   );
